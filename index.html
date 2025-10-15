@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Message Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Offline Message Sender</h1>
+        <p>Send messages via Wi-Fi or Bluetooth without internet</p>
+    </header>
+
+    <main>
+        <div class="connection">
+            <button id="wifiBtn"><img src="images/wifi.png" alt="Wi-Fi"> Connect Wi-Fi</button>
+            <button id="btBtn"><img src="images/bluetooth.png" alt="Bluetooth"> Connect Bluetooth</button>
+        </div>
+
+        <div class="messenger">
+            <textarea id="messageInput" placeholder="Type your message here..."></textarea>
+            <button id="sendBtn"><img src="images/send.png" alt="Send"> Send</button>
+        </div>
+
+        <div class="chatbox" id="chatbox">
+            <p class="system-msg">Welcome! Ready to send messages offline.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; The Bijay | Emails: itadmin@jayprasad.com.np, helpdesk@jayprasad.com.np | IT Support: it@jayprasad.com.np</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
