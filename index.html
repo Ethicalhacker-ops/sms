@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline Message Sender</title>
+    <title>Offline Message</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Offline Message Sender</h1>
-        <p>Send messages via Wi-Fi or Bluetooth without internet</p>
-    </header>
-
-    <main>
-        <div class="connection">
-            <button id="wifiBtn"><img src="images/wifi.png" alt="Wi-Fi"> Connect Wi-Fi</button>
-            <button id="btBtn"><img src="images/bluetooth.png" alt="Bluetooth"> Connect Bluetooth</button>
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="messages"></div>
+            <div id="user-list"></div>
         </div>
-
-        <div class="messenger">
-            <textarea id="messageInput" placeholder="Type your message here..."></textarea>
-            <button id="sendBtn"><img src="images/send.png" alt="Send"> Send</button>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
         </div>
-
-        <div class="chatbox" id="chatbox">
-            <p class="system-msg">Welcome! Ready to send messages offline.</p>
+        <div id="connection-container">
+            <input type="text" id="username-input" placeholder="Enter your name...">
+            <input type="text" id="server-ip-input" placeholder="Enter server IP...">
+            <input type="text" id="room-code-input" placeholder="Enter room code...">
+            <button id="lan-connect-button">Connect LAN</button>
+            <button id="bt-connect-button">Connect Bluetooth</button>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; The Bijay | Emails: itadmin@jayprasad.com.np, helpdesk@jayprasad.com.np | IT Support: it@jayprasad.com.np</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
